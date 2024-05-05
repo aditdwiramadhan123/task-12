@@ -1,0 +1,120 @@
+* {
+    font-family: "Poppins";
+    color: #1e272e;
+}
+
+body {
+    margin: 10% 10%;
+    background-color: #dddddd !important;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+li {
+    list-style-type: none;
+    white-space: nowrap;
+} 
+
+/* main */
+
+.containerEX {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    padding: 5% 8% !important;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    margin: 40px auto !important;
+}
+
+.item {
+    margin: 7px 0;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.cardCVDownload {
+    display: flex; 
+    align-items: center; 
+    margin: 20px 0px;
+}
+
+.linkContact {
+    margin: 0px 30px 0px 0px;
+}
+
+.contactButton {
+    padding: 7px 24px;
+    border-radius: 14px;
+    background-color: #1e272e;
+    color: white;
+    border: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.iconContainer {
+    width: 250px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconContainer .fa-brands {
+    font-size: 40px;
+}
+
+
+
+/* responsive layout */
+@media only screen and (max-width:1000px){
+
+    .containerEX  {
+        grid-template-columns: auto !important;
+        width: 70% !important;
+        margin: 10% auto !important;
+    }
+
+    p {
+        max-width: 100% !important;
+    }
+
+    .cardCVDownload {
+        display: flex !important; 
+        align-items: center !important; 
+        margin: 30px 0px !important;
+    }
+
+    .iconContainer {
+        margin: auto !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .containerEX {
+        font-size: small !important;
+        width: 90% !important;
+    }
+    
+    h1{
+        font-size: 20px !important;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+    .linkContact {
+        margin: 0px 15px 0px 0px !important;
+    }
+}
